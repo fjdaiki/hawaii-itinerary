@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "trip": {
+    "title": "ハワイ家族旅行 2026",
+    "start": "2026-12-02",
+    "end": "2026-12-13",
+    "timezone": "Pacific/Honolulu",
+    "members": ["夫", "妻", "長女（3歳半）", "次女（6か月）"],
+    "policy": "午前に出かけ、午後は昼寝・プールでゆっくり"
+  },
+
+  "flights": [
+    {
+      "id": "out", "date": "2026-12-02", "label": "往路",
+      "from": "日本", "to": "ホノルル",
+      "depart": "20:10", "arrive": "08:10",
+      "note": "日本を12/2夜に出発し、日付変更線を越えて同じ12/2の朝にホノルル着"
+    },
+    {
+      "id": "ret", "date": "2026-12-13", "label": "復路",
+      "from": "ホノルル", "to": "日本",
+      "depart": "11:30", "arrive": "15:45", "arriveDayNote": "12/14 日本着",
+      "airportBeforeMin": 180,
+      "travelMin": 90,
+      "note": "ふだんはホテルから空港まで車で約30分。マラソンの交通規制があるので余裕を見て90分で計算"
+    }
+  ],
+
+  "hotels": [
+    {
+      "id": "embassy",
+      "name": "エンバシースイーツ ワイキキ・ビーチウォーク",
+      "area": "ワイキキ",
+      "checkIn": "2026-12-02", "checkOut": "2026-12-07",
+      "inTime": "16:00", "outTime": "11:00",
+      "address": "201 Beachwalk St, Honolulu, HI 96815",
+      "map": "https://www.google.com/maps/search/?api=1&query=Embassy+Suites+Waikiki+Beach+Walk",
+      "note": "アーリーチェックインを依頼。時刻は予約確認書で確認"
+    },
+    {
+      "id": "aulani",
+      "name": "アウラニ・ディズニー・リゾート",
+      "area": "コオリナ",
+      "checkIn": "2026-12-07", "checkOut": "2026-12-08",
+      "inTime": "15:00", "outTime": "11:00",
+      "address": "92-1185 Aliinui Dr, Kapolei, HI 96707",
+      "map": "https://www.google.com/maps/search/?api=1&query=Aulani+Disney+Resort+Ko+Olina",
+      "note": "ワイキキから車で約40分"
+    },
+    {
+      "id": "hhv",
+      "name": "ヒルトン・ハワイアン・ビレッジ",
+      "area": "ワイキキ",
+      "checkIn": "2026-12-08", "checkOut": "2026-12-13",
+      "inTime": "16:00", "outTime": "11:00",
+      "address": "2005 Kalia Rd, Honolulu, HI 96815",
+      "map": "https://www.google.com/maps/search/?api=1&query=Hilton+Hawaiian+Village+Waikiki",
+      "note": "金曜夜に花火（12/11は部屋から）"
+    }
+  ],
+
+  "days": [
+    {
+      "date": "2026-12-02", "tags": ["arrival"],
+      "note": "到着日。眠くなる前に早めに休む。",
+      "events": [
+        { "id": "d02-1", "slot": "morning", "title": "ホノルル着 8:10・入国審査", "place": "ダニエル・K・イノウエ国際空港", "memo": "ベビーカーは到着ゲートで受け取れるか搭乗時に確認", "map": "https://www.google.com/maps/search/?api=1&query=Daniel+K+Inouye+International+Airport" },
+        { "id": "d02-2", "slot": "morning", "title": "ホテルに荷物を預けて朝食", "place": "エンバシースイーツ ワイキキ・ビーチウォーク", "memo": "アーリーチェックインできるかフロントで確認", "map": "https://www.google.com/maps/search/?api=1&query=Embassy+Suites+Waikiki+Beach+Walk" },
+        { "id": "d02-3", "slot": "noon", "title": "ABCストアで買い出し", "place": "ABCストア（ビーチウォーク周辺）", "memo": "水・おむつ・おしりふき・軽食・日焼け止め", "map": "https://www.google.com/maps/search/?api=1&query=ABC+Store+Beachwalk+Waikiki" },
+        { "id": "d02-4", "slot": "noon", "title": "昼寝・休憩", "place": "ホテル", "memo": "部屋に入れなければプールサイドかラウンジで", "map": "", "rest": true },
+        { "id": "d02-5", "slot": "evening", "title": "ビーチ散歩", "place": "ワイキキビーチ", "memo": "", "map": "https://www.google.com/maps/search/?api=1&query=Waikiki+Beach" },
+        { "id": "d02-6", "slot": "evening", "title": "早めの夕食", "place": "", "memo": "17時台に入れる店を選ぶ", "map": "" }
+      ]
+    },
+    {
+      "date": "2026-12-03", "tags": [],
+      "note": "",
+      "events": [
+        { "id": "d03-1", "slot": "morning", "title": "カピオラニ公園", "place": "カピオラニ公園", "memo": "芝生で遊ぶ。日陰を探してレジャーシート", "map": "https://www.google.com/maps/search/?api=1&query=Kapiolani+Park+Honolulu" },
+        { "id": "d03-2", "slot": "morning", "title": "ワイキキ水族館", "place": "ワイキキ水族館", "memo": "開館時間は要確認", "map": "https://www.google.com/maps/search/?api=1&query=Waikiki+Aquarium" },
+        { "id": "d03-3", "slot": "noon", "title": "昼寝・プール", "place": "ホテル", "memo": "", "map": "", "rest": true }
+      ]
+    },
+    {
+      "date": "2026-12-04", "tags": ["fireworks"],
+      "note": "",
+      "events": [
+        { "id": "d04-1", "slot": "morning", "title": "アラモアナセンター", "place": "アラモアナセンター", "memo": "妻はエルメスへ。その間に子ども連れで散策", "map": "https://www.google.com/maps/search/?api=1&query=Ala+Moana+Center" },
+        { "id": "d04-2", "slot": "noon", "title": "昼寝・プール", "place": "ホテル", "memo": "", "map": "", "rest": true },
+        { "id": "d04-3", "slot": "night", "title": "ヒルトンの金曜花火（ビーチから）", "place": "デューク・カハナモク・ビーチ", "memo": "ホテルから徒歩約10分。例年19:45ごろから（時間は要確認）", "map": "https://www.google.com/maps/search/?api=1&query=Duke+Kahanamoku+Beach+Honolulu" }
+      ]
+    },
+    {
+      "date": "2026-12-05", "tags": [],
+      "note": "",
+      "events": [
+        { "id": "d05-1", "slot": "morning", "title": "KCCファーマーズマーケット", "place": "カピオラニ・コミュニティ・カレッジ", "memo": "土曜7:30〜。混む前の早い時間がおすすめ。車かタクシーで約15分", "map": "https://www.google.com/maps/search/?api=1&query=KCC+Farmers+Market+Honolulu" },
+        { "id": "d05-2", "slot": "noon", "title": "昼寝・プール", "place": "ホテル", "memo": "", "map": "", "rest": true }
+      ]
+    },
+    {
+      "date": "2026-12-06", "tags": ["free"],
+      "note": "予定は空けておく日。",
+      "events": [
+        { "id": "d06-1", "slot": "morning", "title": "ワイキキ散策", "place": "ワイキキ", "memo": "気分で決める", "map": "" },
+        { "id": "d06-2", "slot": "noon", "title": "昼寝・プール", "place": "ホテル", "memo": "", "map": "", "rest": true }
+      ]
+    },
+    {
+      "date": "2026-12-07", "tags": ["move"],
+      "note": "",
+      "events": [
+        { "id": "d07-1", "slot": "morning", "title": "チェックアウト・荷造り", "place": "エンバシースイーツ ワイキキ・ビーチウォーク", "memo": "チェックアウト11:00", "map": "" },
+        { "id": "d07-2", "slot": "noon", "title": "アウラニへ移動（車で約40分）", "place": "アウラニ・ディズニー・リゾート", "memo": "チャイルドシート2台を手配済みか確認", "map": "https://www.google.com/maps/search/?api=1&query=Aulani+Disney+Resort+Ko+Olina" },
+        { "id": "d07-3", "slot": "noon", "title": "流れるプール・ラグーン", "place": "アウラニ", "memo": "", "map": "", "rest": true }
+      ]
+    },
+    {
+      "date": "2026-12-08", "tags": ["move"],
+      "note": "",
+      "events": [
+        { "id": "d08-1", "slot": "morning", "title": "アウラニで遊ぶ", "place": "アウラニ", "memo": "チェックアウト11:00。荷物を預けて遊べるか確認", "map": "" },
+        { "id": "d08-2", "slot": "noon", "title": "ヒルトン・ハワイアン・ビレッジへ移動", "place": "ヒルトン・ハワイアン・ビレッジ", "memo": "車で約40分", "map": "https://www.google.com/maps/search/?api=1&query=Hilton+Hawaiian+Village+Waikiki" },
+        { "id": "d08-3", "slot": "evening", "title": "ホテルのラグーンを散歩", "place": "ヒルトン・ハワイアン・ビレッジ", "memo": "", "map": "", "rest": true }
+      ]
+    },
+    {
+      "date": "2026-12-09", "tags": [],
+      "note": "ゆっくりする日。",
+      "events": [
+        { "id": "d09-1", "slot": "morning", "title": "ホテルのラグーン", "place": "ヒルトン・ハワイアン・ビレッジ", "memo": "", "map": "" },
+        { "id": "d09-2", "slot": "noon", "title": "昼寝・プール", "place": "ホテル", "memo": "", "map": "", "rest": true }
+      ]
+    },
+    {
+      "date": "2026-12-10", "tags": [],
+      "note": "ゆっくりする日。",
+      "events": [
+        { "id": "d10-1", "slot": "morning", "title": "メリーマイルのゼッケン受け取り", "place": "ハワイ・コンベンションセンター", "memo": "受付の日時は要確認。受付書類を持参", "map": "https://www.google.com/maps/search/?api=1&query=Hawaii+Convention+Center" },
+        { "id": "d10-2", "slot": "noon", "title": "昼寝・プール", "place": "ホテル", "memo": "", "map": "", "rest": true }
+      ]
+    },
+    {
+      "date": "2026-12-11", "tags": ["fireworks"],
+      "note": "明日はメリーマイル。早く寝る。",
+      "events": [
+        { "id": "d11-1", "slot": "noon", "title": "昼寝・プール", "place": "ホテル", "memo": "", "map": "", "rest": true },
+        { "id": "d11-2", "slot": "night", "title": "部屋から花火を見る", "place": "ヒルトン・ハワイアン・ビレッジ", "memo": "例年19:45ごろから（時間は要確認）", "map": "" },
+        { "id": "d11-3", "slot": "night", "title": "メリーマイルの準備をして早く寝る", "place": "", "memo": "ゼッケン・ウェア・靴・帽子・日焼け止めを並べておく", "map": "" }
+      ]
+    },
+    {
+      "date": "2026-12-12", "tags": ["race"],
+      "note": "",
+      "events": [
+        { "id": "d12-1", "slot": "morning", "title": "カラカウア・メリーマイル", "place": "カラカウア通り", "memo": "集合・スタート時刻は要確認", "map": "https://www.google.com/maps/search/?api=1&query=Kalakaua+Ave+Waikiki" },
+        { "id": "d12-2", "slot": "morning", "title": "レース後のビーチパーティー", "place": "ワイキキビーチ", "memo": "", "map": "" },
+        { "id": "d12-3", "slot": "noon", "title": "荷造り", "place": "ホテル", "memo": "明日は早朝出発。ベビーカーと機内持ち込みを分けておく", "map": "", "rest": true },
+        { "id": "d12-4", "slot": "night", "title": "早めに寝る", "place": "", "memo": "", "map": "" }
+      ]
+    },
+    {
+      "date": "2026-12-13", "tags": ["departure"],
+      "note": "",
+      "events": [
+        { "id": "d13-1", "slot": "morning", "title": "チェックアウト・空港へ（7:00出発目安）", "place": "ヒルトン・ハワイアン・ビレッジ", "memo": "前日までに車の手配と交通規制をフロントで確認", "map": "" },
+        { "id": "d13-2", "slot": "morning", "title": "空港着 8:30目安・ホノルル11:30発", "place": "ダニエル・K・イノウエ国際空港", "memo": "日本着は12/14 15:45", "map": "https://www.google.com/maps/search/?api=1&query=Daniel+K+Inouye+International+Airport" }
+      ]
+    }
+  ],
+
+  "alerts": [
+    {
+      "date": "2026-12-13", "level": "danger",
+      "title": "ホノルルマラソン当日",
+      "text": "早朝5:00スタート。アラモアナ通り・カラカウア通りなどワイキキ一帯で交通規制があります。ヒルトン・ハワイアン・ビレッジはスタート地点に近いので、空港への車と出発時刻は前日までにフロントで確認してください。"
+    }
+  ],
+
+  "budget": {
+    "target": 1000000,
+    "note": "全体の見込みは約947,000円",
+    "items": [
+      { "id": "air", "name": "航空券", "amount": null },
+      { "id": "hotel", "name": "ホテル", "amount": null },
+      { "id": "food", "name": "食費", "amount": null },
+      { "id": "leisure", "name": "観光・レジャー", "amount": 15000 },
+      { "id": "mile", "name": "メリーマイル", "amount": 42000 },
+      { "id": "shopping", "name": "買い物・お土産", "amount": 20000 },
+      { "id": "net", "name": "通信・旅行保険", "amount": 15000 },
+      { "id": "reserve", "name": "予備費", "amount": 20000 }
+    ]
+  },
+
+  "checklist": [
+    {
+      "group": "出発前の準備",
+      "items": [
+        { "id": "esta", "text": "ESTA（4人分）" },
+        { "id": "passport", "text": "パスポート（4人分）" },
+        { "id": "insurance", "text": "旅行保険" },
+        { "id": "bassinet", "text": "次女のバシネット予約" },
+        { "id": "early", "text": "アーリーチェックインの依頼" },
+        { "id": "carseat", "text": "チャイルドシートの手配" },
+        { "id": "mile-docs", "text": "メリーマイルの受付書類" }
+      ]
+    },
+    {
+      "group": "持ち物",
+      "items": [
+        { "id": "diaper", "text": "おむつ" },
+        { "id": "milk", "text": "ミルク" },
+        { "id": "sunscreen", "text": "日焼け止め" },
+        { "id": "rashguard", "text": "ラッシュガード" },
+        { "id": "carrier", "text": "抱っこ紐" },
+        { "id": "stroller", "text": "ベビーカー" }
+      ]
+    }
+  ]
+}
